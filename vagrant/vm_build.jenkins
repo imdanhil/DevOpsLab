@@ -16,7 +16,6 @@ pipeline {
             steps {
                 echo " ============== start building vm ==================";
                 sh 'vagrant init'
-                
             }
         }
     }
