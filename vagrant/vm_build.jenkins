@@ -12,11 +12,11 @@ pipeline {
         timestamps()
     }
     stages {
-        stage("create docker image") {
+        stage("create vm workstation") {
             steps {
-                echo " ============== start building image =================="
-                dir ('docker/toolbox') {
-                	sh 'docker build -t toolbox:latest . '
+                echo " ============== start building vm =================="
+                {
+                	sh 'vagrant init'
                 }
             }
         }
