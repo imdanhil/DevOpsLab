@@ -15,9 +15,8 @@ pipeline {
         stage("create vm workstation") {
             steps {
                 echo " ============== start building vm =================="
-                {
-                	sh 'vagrant init'
-                }
+                sh 'vagrant init'
+                
             }
         }
     }
